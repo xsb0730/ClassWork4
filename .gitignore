@@ -1,15 +1,88 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ==========================================
+# Android Performance Monitor Project
+# ==========================================
+
+# Gradle
+.gradle/
 local.properties
+
+# Build outputs (只忽略构建产物，不忽略源码)
+**/build/
+app/build/
+sdk/build/
+
+# IDE - IntelliJ IDEA / Android Studio
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries/
+.idea/libraries/
+.idea/caches/
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/.name
+.idea/compiler.xml
+.idea/deploymentTargetDropDown.xml
+
+# 保留代码风格配置
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+captures/
+.externalNativeBuild/
+.cxx/
+google-services.json
+*.hprof
+
+# Java/Kotlin
+*.class
+bin/
+gen/
+out/
+
+# Keystore
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Lint
+lint/
+
+# ==========================================
+# 确保这些目录被追踪
+# ==========================================
+# 源代码目录
+!app/src/
+!sdk/src/
+!**/src/main/
+!**/src/androidTest/
+!**/src/test/
+
+# 配置文件
+!build.gradle.kts
+!settings.gradle.kts
+!gradle.properties
+!gradle/libs.versions.toml
+!*.toml
+!*.pro
+
+# Gradle Wrapper (重要！)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat

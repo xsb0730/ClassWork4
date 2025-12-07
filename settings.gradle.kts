@@ -32,4 +32,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ClassWork4"
 include(":app")
- 
+include(":sdk")

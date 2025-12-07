@@ -50,11 +50,17 @@ android {
 
 dependencies {
 
+    // SDK依赖
+    implementation(project(":sdk"))
+
+    // Android基础库
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // 测试库
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
