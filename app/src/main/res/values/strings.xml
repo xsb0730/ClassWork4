@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ClassWork4</string>
+
+    <!-- 按钮文字 -->
+    <string name="btn_test_animation">测试重度动画</string>
+    <string name="btn_stop_animation">停止重度动画</string>
+
+    <!-- 状态信息 -->
+    <string name="status_monitor_stopped">✋ 监控已停止</string>
+    <string name="status_monitor_running">▶️ 监控运行中</string>
+    <string name="status_janky_test_start">⚠️ 触发卡顿测试…</string>
+    <string name="status_janky_test_done">✅ 卡顿测试完成 (100ms阻塞)</string>
+    <string name="status_anr_test_start">⚠️ 触发ANR测试中…\n(主线程将阻塞5秒)</string>
+    <string name="status_anr_test_done">✅ ANR测试完成</string>
+    <string name="status_animation_running">🎬 重度动画运行中…</string>
+    <string name="status_animation_stopped">⏸️ 动画已停止</string>
+    <string name="status_template">状态: %1$s\n\n请在Logcat中查看监控报告 (标签: PerformanceMonitor)</string>
 </resources>
