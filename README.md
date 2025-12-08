@@ -1,38 +1,30 @@
 
 # 📊 Android Performance Monitor SDK
 
-[![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-blue.svg)](https://kotlinlang.org)
-[![Android](https://img.shields.io/badge/Android-5.0+-green.svg)](https://developer.android.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
 一个轻量级的 Android 性能监控 SDK，用于实时检测应用的流畅性和 ANR（Application Not Responding）问题。
 
-## ✨ 特性
+##  特性
 
-- 🎯 **流畅性监控**
+-  **流畅性监控**
   - 基于 Choreographer 的高精度帧率监控
   - 实时 FPS 计算
   - 卡顿帧检测（可自定义阈值）
   - 周期性性能报告
 
-- 🔍 **ANR 检测**
+-  **ANR 检测**
   - Watchdog 线程监控主线程状态
   - 可配置的 ANR 阈值（默认 5 秒）
   - 自动捕获主线程堆栈信息
   - 精确定位阻塞代码位置
 
-- 🛠️ **灵活配置**
+-  **灵活配置**
   - 可独立启用/禁用各监控模块
   - 自定义阈值和上报间隔
   - 支持自定义上报器接口
   - 调试模式支持
 
-- 📦 **开箱即用**
-  - 简单的初始化流程
-  - 零依赖，纯 Kotlin 实现
-  - 模块化设计，易于扩展
 
-## 📱 Demo 预览
+##  Demo 预览
 
 Demo 应用提供了完整的功能测试：
 
@@ -41,7 +33,7 @@ Demo 应用提供了完整的功能测试：
 - ✅ 重度动画测试（模拟复杂渲染场景）
 - ✅ 启动/停止监控控制
 
-## 🚀 快速开始
+##  快速开始
 
 ### 1. 集成 SDK
 
@@ -135,7 +127,7 @@ E/PerformanceMonitor:     ...
 E/PerformanceMonitor: ============================
 ```
 
-## 📖 API 文档
+##  API 文档
 
 ### MonitorConfig
 
@@ -226,7 +218,7 @@ data class ANRData(
 )
 ```
 
-## 🏗️ 项目结构
+##  项目结构
 
 ```
 ClassWork4/
@@ -266,7 +258,7 @@ ClassWork4/
 └── README.md                         # 本文件
 ```
 
-## 🔧 技术实现
+##  技术实现
 
 ### 流畅性监控原理
 
@@ -311,14 +303,14 @@ Thread {
 }.start()
 ```
 
-## 📊 性能优化
+##  性能优化
 
 - ✅ **低开销**：使用系统回调机制，不引入额外轮询
 - ✅ **异步处理**：ANR 检测在独立线程，不影响主线程
 - ✅ **内存友好**：使用 `ConcurrentLinkedQueue` 管理帧数据，自动清理
 - ✅ **可配置**：所有阈值和间隔可自定义，平衡精度和性能
 
-## 🎯 使用场景
+##  使用场景
 
 ### 开发阶段
 
@@ -373,7 +365,7 @@ cd ClassWork4
 4. 在设备上测试各项功能
 5. 查看 Logcat 输出（过滤 `PerformanceMonitor`）
 
-## 📄 许可证
+##  许可证
 
 ```
 MIT License
@@ -399,7 +391,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 🤝 贡献
+##  贡献
 
 欢迎提交 Issue 和 Pull Request！
 
