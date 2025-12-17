@@ -15,8 +15,8 @@ class DemoApplication : Application() {
             fluencyThresholdMs = 16,
             fluencyReportInterval = 5000,
             enableANRMonitor = true,
-            anrThresholdMs = 3000,
-            anrCheckInterval = 500,
+            anrThresholdMs = 5000,
+            anrCheckInterval = 1000,
             debugMode = true
         )
 

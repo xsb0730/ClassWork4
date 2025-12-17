@@ -331,7 +331,7 @@ Thread {
 - 快速定位性能问题
 
 
-## 🛠️ 构建和运行
+##  构建和运行
 
 ### 环境要求
 
@@ -340,21 +340,6 @@ Thread {
 - Gradle 8.0+
 - Android SDK 21+（Android 5.0+）
 
-### 构建步骤
-
-```bash
-# 克隆项目
-git clone <repository-url>
-cd ClassWork4
-
-# 同步 Gradle
-./gradlew sync
-
-# 构建 SDK
-./gradlew :sdk:build
-
-# 运行 Demo
-./gradlew :app:installDebug
 ```
 
 ### 运行 Demo 应用
@@ -365,46 +350,6 @@ cd ClassWork4
 4. 在设备上测试各项功能
 5. 查看 Logcat 输出（过滤 `PerformanceMonitor`）
 
-##  许可证
-
-```
-MIT License
-
-Copyright (c) 2025
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-##  贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-### 贡献指南
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
-
-
-
 ---
 
-⭐ 如果这个项目对您有帮助，请给个 Star！
+
